@@ -23,7 +23,7 @@ jobs:
 
       - name: npm install and build
         run: |
-          npm i --global gulp yarn
+          npm i gulp yarn
           yarn
           gulp
           
