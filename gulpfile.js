@@ -44,6 +44,6 @@ gulp.task('release',
     gulp.parallel(getTask('copy'), getTask('javascript'), getTask('sass'), getTask('jsonMinify')),
     getTask('html'),
     getTask('clean'),
-    getTast('zip')
+    getTask('zip')
   )
 );
