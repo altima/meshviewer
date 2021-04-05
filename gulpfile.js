@@ -37,3 +37,13 @@ gulp.task('default',
     getTask('clean')
   )
 );
+
+gulp.task('release',
+  gulp.series(
+    gulp.parallel(getTask('eslint'), getTask('sasslint')),
+    gulp.parallel(getTask('copy'), getTask('javascript'), getTask('sass'), getTask('jsonMinify')),
+    getTask('html'),
+    getTask('clean'),
+    getTast('zip')
+  )
+);

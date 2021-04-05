@@ -29,7 +29,7 @@ jobs:
         uses: fnkr/github-action-ghr@v1
         if: startsWith(github.ref, 'refs/tags/')
         env:
-          GHR_COMPRESS: zip
-          GHR_PATH: build/
+#          GHR_COMPRESS: zip
+          GHR_PATH: build/artifact.zip
           GITHUB_TOKEN: ${{ secrets.TEST_TOKEN }}
           
