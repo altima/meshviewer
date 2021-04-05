@@ -1,4 +1,4 @@
-name: Build and save artifact (Test)
+name: Build
 
 on:
   push:
