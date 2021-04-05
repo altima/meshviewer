@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: npm install and build
         run: |
-          npm i gulp yarn
+          npm i gulp yarn gulp-zip
           yarn
           gulp
 #      - name: Archive build folder
