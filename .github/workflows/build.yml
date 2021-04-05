@@ -17,9 +17,9 @@ jobs:
           npm i gulp yarn
           yarn
           gulp
-      - name: Archive build folder
-        uses: actions/upload-artifact@v2
-        with:
-          name: build
-          path: build
+#      - name: Archive build folder
+#        uses: actions/upload-artifact@v2
+#        with:
+#          name: build
+#          path: build
           
